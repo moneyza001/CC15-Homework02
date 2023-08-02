@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <title>Lab 01</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* .position {
+            position: relative;
+            top: 100px;
+        } */
+        .all {
+            display: flex;
+            position: relative;
+            top: 200px;
+            left: 100px;
+            width: 215px;
+            height: 260px;
+            z-index: -1;
+            border-radius: 30px;
+        }
+
+        .card {
+            display: flex;
+            /* border: solid; */
+            height: 260px;
+            width: 200px;
+            position: relative;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            border-radius: 4px;
+            box-shadow: 3px 3px 20px -10px;
+        }
+
+        img {
+            width: 100%;
+            border: 1px solid;
+            border-style: none none solid none;
+        }
+
+        h4 {
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .circle {
+            display: flex;
+            /* box-sizing: border-box; */
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            width: 35px;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            margin-top: -13px;
+        }
+
+        .x {
+            width: 35px;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            font-size: larger;
+            padding: 4px;
+        }
+
+            
+    </style>
+</head>
+
+<body>
+        <div class="all">
+            <div class="card">
+                <img src="https://www.svgrepo.com/show/429787/human-man-10.svg" alt="">
+                <h4>Gold D. Roger</h4>
+            </div>
+            <div class="circle">
+                <p>9</p>   
+            </div>
+            <div class="x">
+                X
+            </div>
+            
+        </div>
+</body>
+
+</html>
